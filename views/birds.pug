@@ -10,3 +10,8 @@ block content
           div(class = "col-sm-2 " onclick=`buy(${index})`) #{form.name}
           div(class = "col-sm-2 " onclick=`buy(${index})`) #{form.color}
           div(class = "col-sm-2 " onclick=`buy(${index})`) #{form.size}
+  script.
+    function buy(itemNo)
+    {
+      alert(`You purchased Item ${itemNo+1}`)
+    }
